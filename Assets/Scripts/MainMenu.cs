@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void OnPlayButtonClicked()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Battle");
     }
 
 }
