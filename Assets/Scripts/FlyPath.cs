@@ -13,14 +13,14 @@ public class FlyPath : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if(wayPoints != null)
-            return;
+        if (wayPoints == null) return;
 
         Gizmos.color = Color.green;
-        for(int i = 0; i < wayPoints.Length-1; i++)
+        for (int i = 0; i < wayPoints.Length - 1; i++)
         {
             Gizmos.DrawLine(wayPoints[i].transform.position, wayPoints[i + 1].transform.position);
         }
     }
+
 
 }
